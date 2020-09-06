@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+:root {
+  --accent-color: #f57c00;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #282c35;
+  margin: 0;
+}
+
+#title {
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  color: var(--accent-color);
+}
+
+#calculator {
+  max-height: 600px;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: black;
+}
+
+#input {
+  display: block;
+  width: 100%;
+  border: none;
+  height: 50px;
+  font-size: large;
+  background-color: #1a2228;
+  color: white;
+}
+
+#button-group {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  align-content: center;
+  color: white;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+button,
+.button-primary {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  width: 60px;
+  font-size: larger;
+  height: 60px;
+  background-color: black;
+  color: white;
+  border: 1.5px solid gray;
+  border-radius: 50%;
+}
+
+.button-special {
+  background-color: #282c35;
+  border: none;
+}
+
+
+
+
+#input:focus,
+#input:active {
+  border: none;
+}
+
+.button-primary {
+  border: none;
+  background-color: var(--accent-color);
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+button:focus{
+  outline: none;
+}
+
+.button-primary:hover,
+button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.button-primary:hover{
+  background-color: #fa9a3a;
+}
+@media only screen and (max-width: 500px) {
+  #calculator {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    height: 100%;
+  }
+}
